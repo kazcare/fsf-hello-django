@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 import dj_database_url
 
@@ -27,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-x#e@oyr*$cv8gn46$ml7i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+ALLOWED_HOSTS = ['kazcare-django-todo-app.herokuapp.com']
 
 
 # Application definition
